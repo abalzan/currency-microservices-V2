@@ -19,5 +19,5 @@ public class CurrencyExchange {
     @Column(name = "currency_to")
     private String to;
     private BigDecimal conversionMultiple;
-    private String environmentPort;
+    private String environment;
 }
