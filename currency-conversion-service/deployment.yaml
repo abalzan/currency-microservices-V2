@@ -28,6 +28,9 @@ spec:
       - image: neninho/currency-conversion-service:0.0.12-SNAPSHOT
         imagePullPolicy: IfNotPresent
         name: currency-conversion-service
+        env:
+          - name: CURRENCY_EXCHANGE_URI
+            value: http://currency-exchange
       restartPolicy: Always
 ---
 apiVersion: v1
